@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+    <!-- update the version number as needed -->
+    <script  src="/__/firebase/5.4.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script  src="/__/firebase/5.4.0/firebase-auth.js"></script>
+    <script  src="/__/firebase/5.4.0/firebase-database.js"></script>
+    <script  src="/__/firebase/5.4.0/firebase-messaging.js"></script>
+    <script  src="/__/firebase/5.4.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script  src="/__/firebase/init.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+ </head>
+  <body>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Some Myanmar App</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation">
+      <!-- Navigation -->
+        <a class="mdl-navigation__link" href="index1.html"><h5>Home</h5></a>
+            </nav>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+
+        <div class="page-content"><!-- Your content goes here -->
+     <span class="title"><b>App Name</b></span>
+       <ul class="collection"><li class="collection-item avatar" id="apps"></li></ul>
+
+  </div>
+
+    <div>
+      <h4><i>App detail Info for Above App</i></h4>
+      <label for="internNameRead">Enter App Name:</label>
+      <input type="text" id="internNameRead"></input>
+      <button onclick="internsApp.Read()">Get Info</button>
+      <hr>
+      <table>
+        <th><tr><td>Developer Name:</td><td id="internDevNameResult">Developer Name</td></tr></th>
+             <th><tr><td>Developer URL: </td><td id="devUrlResult">Developer Url</td></tr></th>
+             <th><tr><td>Developer Email:</td><td id="devEmailResult">Developer Emai</td></tr></th>
+             <th><tr><td>Playstore Link:</td><a><td id="playstoreLinkResult">Playstore Link</td></a></tr></th>
+             <th><tr><td>File Size:</td><td id="fileSizeResult">File Size</td></tr></th>
+             <th><tr><td>App Description:</td><td id="appDescriptionResult">App Description</td></tr></th>
+             <th><tr><td>Tags:</td><td id="tagsResult">Tags</td></tr></th>
+             <th><tr><td>App Category:</td><td id="appCategoryResult">App Category</td></tr></th>
+             <th><tr><td>No_of Download:</td><td id="noOfDownloadResult">no-of download</td></tr></th>
+             <th><tr><td>Average Star Rating:</td><td id="averageRatingResult">Rating</td></tr></th>
+             <th><tr><td>Total Rating:</td><td id="totalRatingResult">Total Rating</td></tr></th>
+             <th><tr><td>Update Date:</td><td id="updateDateResult">Update Date</td></tr></th>
+             <th><tr><td>Entry Date:</td><td id="entryDateResult">Entry date</td></tr></th>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="lib.js"></script>
+    <script src="js/app.js"></script>
+ </body>
+</html>
